@@ -1,5 +1,6 @@
 import React from 'react';
 import { genres } from '../assets/constants';
+import { SongCard } from '../components';
 
 const Discover = () => {
   return (
@@ -17,6 +18,15 @@ const Discover = () => {
             <option key={genre.value} value={genre.value}>{genre.title}</option>
           )}
         </select>
+      </div>
+      <div className='flex flex-wrap sm:justify-start justify-center gap-8'>
+        {[1,2,3,4,5,6,7,8,9,10].map((song, i) => (
+          <SongCard
+            key={song}
+            song={song}
+            i={i}
+          />
+        ))}
       </div>
     </div>
   );
