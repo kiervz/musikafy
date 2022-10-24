@@ -1,10 +1,13 @@
 import React from 'react';
-import { genres } from '../assets/constants';
-import { SongCard } from '../components';
-import { useGetTopChartsQuery } from '../services/shazamCore';
+import { genres } from '../../assets/constants';
+import { SongCard } from '../../components';
+import { useGetTopChartsQuery } from '../../redux/services/shazamCore';
+import { ChartWorld } from './types'
 
 const Discover = () => {
   const { data, isFetching, error} = useGetTopChartsQuery();
+
+  console.log(data);
 
   return (
     <div className='flex flex-col'>
@@ -17,15 +20,15 @@ const Discover = () => {
           value=''
           className='bg-black text-gray-300 p-3 text-sm rounded-lg outline-none sm:mt-0 mt-5'
         >
-          {genres.map((genre) =>
+          {genres.map((genre: any) =>
             <option key={genre.value} value={genre.value}>{genre.title}</option>
           )}
         </select>
       </div>
       <div className='flex flex-wrap sm:justify-start justify-center gap-8'>
-        {data?.map((song, i) => (
+        {data?.map((song: ChartWorld, i: number) => (
           <SongCard
-            key={song}
+            key={i}
             song={song}
             i={i}
           />
