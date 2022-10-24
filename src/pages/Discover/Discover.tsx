@@ -1,13 +1,16 @@
 import React from 'react';
 import { genres } from '../../assets/constants';
 import { SongCard } from '../../components';
+import { Error } from '../../components/common/error/Error';
+import { Loader } from '../../components/common/loader/Loader';
 import { useGetTopChartsQuery } from '../../redux/services/shazamCore';
 import { ChartWorld } from './types'
 
 const Discover = () => {
   const { data, isFetching, error} = useGetTopChartsQuery();
 
-  console.log(data);
+  if (isFetching) return <Loader title='Loading Songs...'/>;
+  if (error) return <Error />;
 
   return (
     <div className='flex flex-col'>
