@@ -11,3 +11,22 @@
 body {
   height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #8892B0;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0d3b2f;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2E8684;
+}
