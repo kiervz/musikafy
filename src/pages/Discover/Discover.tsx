@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { genres } from '../../assets/constants';
 import { SongCard } from '../../components';
 import { Error } from '../../components/common/error/Error';
@@ -7,6 +8,8 @@ import { useGetTopChartsQuery } from '../../redux/services/shazamCore';
 import { ChartWorld } from './types'
 
 const Discover = () => {
+  const dispatch = useDispatch();
+  const { activeSong, isPlaying } = useSelector((state) => state.player)
   const { data, isFetching, error} = useGetTopChartsQuery();
 
   if (isFetching) return <Loader title='Loading Songs...'/>;
@@ -33,6 +36,9 @@ const Discover = () => {
           <SongCard
             key={i}
             song={song}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
+            data={data}
             i={i}
           />
         ))}
