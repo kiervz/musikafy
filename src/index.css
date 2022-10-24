@@ -23,10 +23,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0d3b2f;
+  background-color: #5DEBCC;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #2E8684;
+  background-color: #5DEBCC;
 }

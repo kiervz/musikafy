@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const reducers = {
-  setActiveSong: (state, action) => {
+  setActiveSong: (state: any, action: any) => {
     state.activeSong = action.payload.song;
 
     if (action.payload?.data?.tracks?.hits) {
@@ -25,7 +25,7 @@ const reducers = {
     state.isActive = true;
   },
 
-  nextSong: (state, action) => {
+  nextSong: (state: any, action: any) => {
     if (state.currentSongs[action.payload]?.track) {
       state.activeSong = state.currentSongs[action.payload]?.track;
     } else {
@@ -36,7 +36,7 @@ const reducers = {
     state.isActive = true;
   },
 
-  prevSong: (state, action) => {
+  prevSong: (state: any, action: any) => {
     if (state.currentSongs[action.payload]?.track) {
       state.activeSong = state.currentSongs[action.payload]?.track;
     } else {
@@ -47,11 +47,11 @@ const reducers = {
     state.isActive = true;
   },
 
-  playPause: (state, action) => {
+  playPause: (state: any, action: any) => {
     state.isPlaying = action.payload;
   },
 
-  selectGenreListId: (state, action) => {
+  selectGenreListId: (state: any, action: any) => {
     state.genreListId = action.payload;
   },
 }

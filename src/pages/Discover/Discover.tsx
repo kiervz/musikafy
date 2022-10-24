@@ -9,7 +9,7 @@ import { ChartWorld } from './types'
 
 const Discover = () => {
   const dispatch = useDispatch();
-  const { activeSong, isPlaying } = useSelector((state) => state.player)
+  const { activeSong, isPlaying } = useSelector((state: any) => state.player)
   const { data, isFetching, error} = useGetTopChartsQuery();
 
   if (isFetching) return <Loader title='Loading Songs...'/>;
