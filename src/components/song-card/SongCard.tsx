@@ -5,7 +5,7 @@ import PlayPause from '../play-pause/PlayPause';
 import { playerAction } from '../../redux/features/playerSlice'
 import { Song } from "./types";
 
-const SongCard = ({ song, i, isPlaying, activeSong, data }: Song) => {
+const SongCard: React.FC<Song> = ({ song, i, isPlaying, activeSong, data }) => {
   const dispatch = useDispatch();
 
   const handlePauseClick = () => {

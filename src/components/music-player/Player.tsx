@@ -2,7 +2,16 @@
 import React, { useRef, useEffect } from 'react';
 import { Player as PlayerProps } from './types';
 
-const Player = ({ activeSong, isPlaying, volume, seekTime, onEnded, onTimeUpdate, onLoadedData, repeat }: PlayerProps) => {
+const Player: React.FC<PlayerProps> = ({
+  activeSong,
+  isPlaying,
+  volume,
+  seekTime,
+  onEnded,
+  onTimeUpdate,
+  onLoadedData,
+  repeat
+}) => {
   const ref = useRef<any>(null);
   // eslint-disable-next-line no-unused-expressions
   if (ref.current) {

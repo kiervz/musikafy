@@ -1,7 +1,7 @@
 import React from 'react';
 import { Seekbar as SeekbarProps } from './types';
 
-const Seekbar = ({ value, min, max, onInput, setSeekTime, appTime }: SeekbarProps) => {
+const Seekbar: React.FC<SeekbarProps> = ({ value, min, max, onInput, setSeekTime, appTime }) => {
   // converts the time to format 0:00
   const getTime = (time: number) => `${Math.floor(time / 60)}:${(`0${Math.floor(time % 60)}`).slice(-2)}`;
 

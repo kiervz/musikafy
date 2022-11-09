@@ -1,7 +1,7 @@
 import { FaPauseCircle, FaPlayCircle } from 'react-icons/fa'
 import { PlayPause as PlayPauseProps } from './types/PlayPause';
 
-const PlayPause = ({ song, handlePause, handlePlay, isPlaying, activeSong }: PlayPauseProps) => {
+const PlayPause: React.FC<PlayPauseProps> = ({ song, handlePause, handlePlay, isPlaying, activeSong }) => {
   return (
     <>
       {isPlaying && activeSong?.title === song.title

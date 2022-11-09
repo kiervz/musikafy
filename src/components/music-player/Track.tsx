@@ -1,7 +1,7 @@
 import React from 'react';
 import { Track as TrackProps } from './types';
 
-const Track = ({ isPlaying, isActive, activeSong }: TrackProps) => (
+const Track: React.FC<TrackProps> = ({ isPlaying, isActive, activeSong }) => (
   <div className="flex-1 flex items-center">
     <div className={`${isPlaying && isActive ? 'animate-[spin_3s_linear_infinite]' : ''} hidden sm:block h-16 w-16 mr-4`}>
       <img src={activeSong?.images?.coverart} alt="cover art" className="rounded-full" />
