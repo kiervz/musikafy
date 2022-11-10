@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Searchbar from "./layouts/Searchbar"
 import Sidebar from "./layouts/Sidebar"
-import Discover from "./pages/Discover/Discover"
+import Discover from "./pages/discover/Discover"
 import MusicPlayer from './components/music-player/MusicPlayer';
 
 const App = () => {
