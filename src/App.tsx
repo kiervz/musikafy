@@ -6,6 +6,7 @@ import Sidebar from "./layouts/Sidebar"
 import Discover from "./pages/discover/Discover"
 import MusicPlayer from './components/music-player/MusicPlayer';
 import TopPlay from './pages/top-play/TopPlay';
+import SongDetails from './pages/song-detail/SongDetail';
 
 const App = () => {
   const { activeSong } = useSelector((state: any) => state.player);
@@ -20,6 +21,7 @@ const App = () => {
             <div className="flex-1 h-fit pb-40">
               <Routes>
                 <Route path="/" element={<Discover />} />
+                <Route path="/songs/:songid" element={<SongDetails />} />
               </Routes>
             </div>
             <div className='xl:sticky relative top-0 h-fit'>

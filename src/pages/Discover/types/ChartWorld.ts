@@ -18,5 +18,6 @@ export interface ChartWorld {
   title:          string;
   type:           ChartWorldType;
   url:            string;
-  track?:         any
+  track?:         any;
+  attributes:     any;
 }

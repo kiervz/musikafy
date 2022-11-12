@@ -5,6 +5,9 @@ import { FreeMode } from 'swiper';
 
 import { useGetTopChartsQuery } from '../../redux/services/shazamCore';
 
+import 'swiper/css';
+import 'swiper/css/free-mode';
+
 const TopArtist = () => {
   const { data } = useGetTopChartsQuery();
   const topPlays = data?.slice(0, 5);

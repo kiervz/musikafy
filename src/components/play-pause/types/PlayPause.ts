@@ -1,8 +1,8 @@
-import { ChartWorld } from "../../../pages/discover/types";
+import { RelatedSongsData } from "../../related-songs/types/RelatedSongsData";
 import { ActiveSong } from "./ActiveSong";
 
 export interface PlayPause {
-  song: ChartWorld,
+  song: RelatedSongsData,
   handlePause: () => void,
   handlePlay: () => void,
   isPlaying: boolean,
