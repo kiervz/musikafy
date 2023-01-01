@@ -1,4 +1,4 @@
-import { Artist, Highlightsurls, Hub, Share } from "../../../pages/discover/types";
+import { Artist, Hub, Share } from "../../../pages/discover/types";
 import { Images } from "./Images";
 
 export interface RelatedSongsData {
@@ -12,7 +12,7 @@ export interface RelatedSongsData {
   hub: Hub;
   artists: Artist[];
   url: string;
-  highlightsurls: Highlightsurls;
-  properties: Highlightsurls;
+  highlightsurls: any;
+  properties: any;
   attributes: any;
 }
