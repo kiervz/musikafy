@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Searchbar from "./layouts/Searchbar"
-import Sidebar from "./layouts/Sidebar"
-import Discover from "./pages/discover/Discover"
+import Searchbar from "./layouts/Searchbar";
+import Sidebar from "./layouts/Sidebar";
 import MusicPlayer from './components/music-player/MusicPlayer';
+import Discover from "./pages/discover/Discover";
 import TopPlay from './pages/top-play/TopPlay';
 import SongDetails from './pages/song-detail/SongDetail';
 import Search from './pages/search/Search';
