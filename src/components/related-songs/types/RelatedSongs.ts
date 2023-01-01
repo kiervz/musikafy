@@ -6,6 +6,6 @@ export interface RelatedSongs {
   artistId: any,
   isPlaying: boolean,
   activeSong: ActiveSong,
-  handlePauseClick: () => void,
-  handlePlayClick: (song?: any, i?: any) => void
+  handlePauseClick?: () => void,
+  handlePlayClick?: (song?: any, i?: any) => void
 }

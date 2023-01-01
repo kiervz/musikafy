@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { TopChartProps } from './types/TopChartProps';
 import PlayPause from '../../components/play-pause/PlayPause';
-import { TopChart } from './types/TopChart';
 
-const TopChartItem: React.FC<TopChart> = ({ song, i, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => {
+const TopChartItem: React.FC<TopChartProps> = ({ song, i, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => {
   return (
-    <div className={`w-full flex flex-row items-center hover:bg-[#112240] ${activeSong?.title === song?.title ? 'bg-[#112240]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
+    <div className={`w-full flex flex-row items-center hover:bg-[#0E5E6F] ${activeSong?.title === song?.title ? 'bg-[#0E5E6F]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
       <h3 className="font-bold text-base text-white mr-3">{i + 1}.</h3>
       <div className="flex-1 flex flex-row justify-between items-center">
         <img className="w-20 h-20 rounded-lg" src={song?.images?.coverart} alt={song?.title} />

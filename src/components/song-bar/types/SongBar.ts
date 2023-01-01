@@ -7,6 +7,6 @@ export interface SongBar {
   artistId: string;
   isPlaying: boolean;
   activeSong: ActiveSong;
-  handlePauseClick: () => void;
-  handlePlayClick: (song?: any, i?: any) => void;
+  handlePauseClick?: () => void;
+  handlePlayClick?: (song?: any, i?: any) => void;
 }

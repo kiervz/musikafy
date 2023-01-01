@@ -1,5 +1,5 @@
 export interface Details {
   artistId: any
-  songData: any
+  songData?: any
   artistData?: any
 }
