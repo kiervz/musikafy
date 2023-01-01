@@ -6,7 +6,7 @@ import { ActiveSong } from "./ActiveSong";
 export interface PlayPause {
   song: RelatedSongsData,
   handlePause?: () => void,
-  handlePlay?: (song: RelatedSongsData, i: number) => void,
+  handlePlay?: () => void,
   isPlaying: boolean,
   activeSong: ActiveSong
 }
