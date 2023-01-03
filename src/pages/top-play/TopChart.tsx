@@ -20,7 +20,12 @@ const TopChart = () => {
   };
 
   const handlePlayClick = (song: ChartWorld, i: number) => {
-    dispatch(playerAction.setActiveSong({ song, data, i }));
+    const dataPlay: any = {
+      song,
+      data,
+      i
+    };
+    dispatch(playerAction.setActiveSong(dataPlay));
     dispatch(playerAction.playPause(true));
   };
 

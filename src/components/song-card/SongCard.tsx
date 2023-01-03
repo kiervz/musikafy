@@ -13,7 +13,12 @@ const SongCard: React.FC<Song> = ({ song, i, isPlaying, activeSong, data }) => {
   }
 
   const handlePlayClick = () => {
-    dispatch(playerAction.setActiveSong({ song, data, i }));
+    const dataPlay: any = {
+      song,
+      data,
+      i
+    };
+    dispatch(playerAction.setActiveSong(dataPlay));
     dispatch(playerAction.playPause(true))
   }
 
