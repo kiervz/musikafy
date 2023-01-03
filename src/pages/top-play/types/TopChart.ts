@@ -1,4 +1,4 @@
-import { ChartWorld } from "../../discover/types";
+import { ChartWorld } from "../../discover1/types";
 import { ActiveSong } from "../../../components/play-pause/types";
 import { RelatedSongs } from "../../../components/related-songs/types";
 

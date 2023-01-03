@@ -1,4 +1,4 @@
-import { ChartWorld } from "../../../pages/discover/types";
+import { ChartWorld } from "../../../pages/discover1/types";
 import { ActiveSong } from "../../play-pause/types/ActiveSong";
 
 export interface Song {
