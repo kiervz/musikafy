@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { ChartWorld } from '../discover1/types';
+import { ChartWorld } from '../discover/types';
 import { playerAction } from '../../redux/features/playerSlice';
 import { useGetTopChartsQuery } from '../../redux/services/shazamCore';
 

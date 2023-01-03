@@ -1,4 +1,4 @@
-import { Artist, Hub, Share } from "../../../pages/discover1/types";
+import { Artist, Hub, Share } from "../../../pages/discover/types";
 import { Images } from "./Images";
 
 export interface RelatedSongsData {

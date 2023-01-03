@@ -1,4 +1,4 @@
-import { ChartWorld } from "../../../pages/discover1/types";
+import { ChartWorld } from "../../../pages/discover/types";
 
 export interface Controls {
   isPlaying:        boolean,

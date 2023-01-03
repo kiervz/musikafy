@@ -1,5 +1,5 @@
 import { ActiveSong } from "../../../components/play-pause/types";
-import { ChartWorld } from "../../../pages/discover1/types";
+import { ChartWorld } from "../../../pages/discover/types";
 
 export interface PlayPause {
   song: ChartWorld,
